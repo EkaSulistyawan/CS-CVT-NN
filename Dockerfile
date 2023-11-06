@@ -1,10 +1,13 @@
 FROM ubuntu:20.04
+
+
 # Install GCC
 RUN apt-get update \
 && apt-get install -y gcc \
 && apt-get install -y g++ \
 && apt-get install -y make \
-&& apt-get install -y build-essential libssl-dev libffi-dev python3-dev python3-pip python3-opencv \
+&& apt-get install -y build-essential libssl-dev libffi-dev python3-dev python3-pip \
+&& DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends python3-opencv \
 && apt-get install -y git \
 && apt-get install -y wget
 
