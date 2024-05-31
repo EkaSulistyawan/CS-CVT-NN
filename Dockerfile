@@ -43,5 +43,5 @@ RUN pip3 install opencv-contrib-python
 # Move to app directory
 WORKDIR /app
 COPY *.ipynb .
-COPY *.tif .
+COPY *.png .
 CMD ["jupyter","notebook","--allow-root","--ip","0.0.0.0","--port","8888"]
