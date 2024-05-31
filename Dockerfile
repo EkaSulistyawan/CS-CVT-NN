@@ -34,6 +34,7 @@ RUN pip3 install matplotlib
 
 # Install DL module
 RUN pip3 install numpy
+RUN pip3 install networkx==2.8.8
 RUN pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
 RUN pip3 install Pillow
 RUN pip3 install scipy
